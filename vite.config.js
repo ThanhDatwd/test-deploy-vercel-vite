@@ -9,4 +9,9 @@ export default defineConfig({
       { find: '~', replacement: '/src' }
     ]
   },
-})
+  build: {
+    rollupOptions: {
+      input: 'src/main.jsx', // hoặc 'src/main.ts' nếu sử dụng TypeScript
+    },
+  },
+});
